@@ -8,6 +8,11 @@ For this sample program, we'll use the FastText pre-trained vectors for the Engl
 ```bash
 pip install fasttext torch
 ```
+If that fails,
+```bash
+pip install fasttext-wheel
+```
+See https://pypi.org/project/fasttext-wheel/
 
 2. Download the pre-trained FastText model:
 
