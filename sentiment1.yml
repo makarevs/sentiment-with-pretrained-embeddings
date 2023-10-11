@@ -1,0 +1,40 @@
+name: sentiment1
+channels:
+  - conda-forge
+  - anaconda
+  - defaults
+dependencies:
+  - python
+  - pip
+  - numpy
+  - pandas
+  # Graphics / diagramming
+  - matplotlib
+  # - seaborn
+  # - graphviz
+  # Data science basics
+  - scikit-learn
+  # - statsmodels
+  - scipy
+  # - jupyter
+  # - notebook
+  # Accessories
+  - flake8
+  - xlrd
+  - tqdm
+  # # Boosting
+  # - lightgbm
+  # # NLP
+  # - spaCy
+  # - gensim
+  # - nltk
+  # # - mxnet-cu92
+  - pip:
+    # - Keras  # ==2.3.1
+    # - tensorflow  #==2.0.0
+    # - jupyter_contrib_nbextensions==0.5.1
+    # - xgboost
+    - fasttext
+    - torch
+    # - bert-embedding
+    # - flair

@@ -1,31 +1,3 @@
-# sentiment-with-pretrained-embeddings
-use the FastText pre-trained vectors for the English language and perform sentiment analysis on the large movie review dataset from IMDb
-
-For this sample program, we'll use the FastText pre-trained vectors for the English language and perform sentiment analysis on the large movie review dataset from IMDb.
-
-1. Install necessary libraries:
-
-```bash
-pip install fasttext torch
-```
-
-2. Download the pre-trained FastText model:
-
-```bash
-wget https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.en.300.bin.gz
-gunzip cc.en.300.bin.gz
-```
-
-3. Download and extract the IMDb movie reviews dataset:
-
-```bash
-wget http://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
-tar xzf aclImdb_v1.tar.gz
-```
-
-4. Create the sample Python program (e.g., `fasttext_sentiment_analysis.py`):
-
-```python
 import fasttext
 import os
 import random
@@ -139,12 +111,3 @@ for epoch in range(num_epochs):
     print("\nTest Accuracy: {:.2f}%\n".format(acc))
 
 print("Training completed.")
-```
-
-5. Run the sample program:
-
-```bash
-python fasttext_sentiment_analysis.py
-```
-
-The above sample program uses FastText pre-trained vectors to create embeddings for the movie reviews from the IMDb dataset. Then, it uses a simple LSTM-based model for sentiment analysis. The script trains the model for 5 epochs and evaluates its performance on the test set after every epoch.
